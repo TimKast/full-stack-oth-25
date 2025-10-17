@@ -11,8 +11,6 @@ import { accountsController } from "./controllers/accounts-controller.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-let test = 1;
-
 async function init() {
   const server = Hapi.server({
     port: process.env.PORT || 3000,
