@@ -1,7 +1,6 @@
 ---
 icon:
-  type: vscode-icons:file-type-pdf2
-  color: purple
+  type: streamline-color:ai-chip-spark
 ---
 LLM Notebook
 
