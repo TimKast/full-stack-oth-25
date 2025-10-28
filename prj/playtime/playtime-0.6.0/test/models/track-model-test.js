@@ -25,8 +25,9 @@ suite("Track Model tests", () => {
   });
 
   test("create multiple trackApi", async () => {
-    const tracks = await db.playlistStore.getPlaylistById(beethovenList._id);
-    assert.equal(testTracks.length, testTracks.length);
+    const playlist = await db.playlistStore.getPlaylistById(beethovenList._id);
+    const tracks = await db.trackStore.getTracksByPlaylistId(playlist._id);
+    assert.equal(testTracks.length, tracks.length);
   });
 
   test("delete all trackApi", async () => {
