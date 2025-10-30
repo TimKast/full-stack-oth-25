@@ -1,3 +1,3 @@
 Assignment Submission
 
-Moodle assignment dropbox for the Assignment 
+Deadline: Sunday 23:50, January 18th, 2026
