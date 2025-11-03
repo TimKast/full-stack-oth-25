@@ -1,4 +1,4 @@
-import { Db } from "../types/donation-types.js";
+import type { Db } from "../types/donation-types.js";
 import { connectMongo } from "./mongo/connect.js";
 
 export const db: Db = {
