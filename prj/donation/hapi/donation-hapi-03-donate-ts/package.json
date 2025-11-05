@@ -2,22 +2,18 @@
   "name": "donation-hapi-02-ts",
   "version": "0.3.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev:tsc": "tsc --watch",
-    "start": "npm run build && node src/server.js",
-    "dev": "./node_modules/.bin/nodemon src/server.js  --ignore 'src/models/json/*.json'",
-    "lint": "./node_modules/.bin/eslint . --ext .js"
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/server.js",
+    "dev": "tsx watch src/server.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^10.9.2",
     "@types/hapi__cookie": "^12.0.5",
-    "@types/hapi__inert": "^7.1.0",
-    "@types/hapi__vision": "^7.0.2",
+    "@types/node": "^24.10.0",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
     "eslint": "8.57.1",
@@ -26,6 +22,7 @@
     "eslint-plugin-import": "^2.32.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.9.3"
   },
   "dependencies": {
