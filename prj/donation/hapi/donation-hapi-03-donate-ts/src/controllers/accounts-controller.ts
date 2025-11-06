@@ -4,13 +4,13 @@ import { db } from "../models/db.js";
 export const accountsController = {
   index: {
     auth: false,
-    handler: async function (request: Request, h: ResponseToolkit) {
+    handler: function (request: Request, h: ResponseToolkit) {
       return h.view("main", { title: "Welcome to Donation" });
     },
   },
   showSignup: {
     auth: false,
-    handler: async function (request: Request, h: ResponseToolkit) {
+    handler: function (request: Request, h: ResponseToolkit) {
       return h.view("signup", { title: "Sign up for Donation" });
     },
   },
@@ -24,7 +24,7 @@ export const accountsController = {
   },
   showLogin: {
     auth: false,
-    handler: async function (request: Request, h: ResponseToolkit) {
+    handler: function (request: Request, h: ResponseToolkit) {
       return h.view("login", { title: "Login to Donation" });
     },
   },
@@ -41,7 +41,7 @@ export const accountsController = {
     },
   },
   logout: {
-    handler: async function (request: Request, h: ResponseToolkit) {
+    handler: function (request: Request, h: ResponseToolkit) {
       request.cookieAuth.clear();
       return h.redirect("/");
     },

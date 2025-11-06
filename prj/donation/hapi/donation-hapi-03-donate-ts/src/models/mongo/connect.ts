@@ -20,7 +20,8 @@ export function connectMongo(db: Db) {
   dotenv.config();
 
   Mongoose.set("strictQuery", true);
-  Mongoose.connect(process.env.db as string);
+  // @ts-ignore
+  Mongoose.connect(process.env.db);
   const mongoDb = Mongoose.connection;
 
   db.userStore = userStore;
@@ -35,7 +36,7 @@ export function connectMongo(db: Db) {
     console.log("database disconnected");
   });
 
-  mongoDb.once("open", function () {
+  mongoDb.once("open", () => {
     console.log(`database connected to ${mongoDb.name} on ${mongoDb.host}`);
     seed();
   });

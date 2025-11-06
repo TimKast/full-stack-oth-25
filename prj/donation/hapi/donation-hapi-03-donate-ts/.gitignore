@@ -1,17 +1,3 @@
-# Build output
-/dist/
-
-# Generated JS from TS in src
-/src/**/*.js
-/src/**/*.js.map
-
-# Dependencies
-/node_modules/
-
-# OS files
-.DS_Store
-*.js
-
 # IDE
 .idea
 .vscode

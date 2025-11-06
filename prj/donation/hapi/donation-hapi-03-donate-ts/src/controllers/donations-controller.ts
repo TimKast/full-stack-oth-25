@@ -1,5 +1,5 @@
-import { Request, ResponseToolkit } from "@hapi/hapi";
 import { db } from "../models/db.js";
+import { Request, ResponseToolkit } from "@hapi/hapi";
 
 export const donationsController = {
   index: {
