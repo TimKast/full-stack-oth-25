@@ -1,8 +1,7 @@
-import Mongoose from "mongoose";
+import { Schema, model } from "mongoose";
+import { Donation } from "../../types/donation-types";
 
-const { Schema } = Mongoose;
-
-const donationSchema = new Schema({
+const donationSchema = new Schema<Donation>({
   amount: Number,
   method: String,
   donor: {
@@ -17,4 +16,4 @@ const donationSchema = new Schema({
   lng: String,
 });
 
-export const DonationMongoose = Mongoose.model("Donation", donationSchema);
+export const DonationMongoose = model("Donation", donationSchema);
