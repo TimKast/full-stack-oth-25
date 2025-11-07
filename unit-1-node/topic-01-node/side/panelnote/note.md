@@ -1,1 +1,7 @@
-<iframe src="https://creators.spotify.com/pod/profile/eamonn-de-leastar0/embed/episodes/01--Node-e3akmlg/a-ac8mgsb" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+<iframe style="border-radius:12px"
+  src="https://open.spotify.com/embed/episode/01--Node-e3akmlg"
+  width="100%" height="232" frameborder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
