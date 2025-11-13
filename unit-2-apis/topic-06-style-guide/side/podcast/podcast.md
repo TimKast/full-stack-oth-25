@@ -1,3 +1,3 @@
-Node Introduction
+Style Guide
 
 Notebook LLM generated summary podcast
